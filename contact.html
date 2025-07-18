@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- 
+🚨 ATTENTION AI CODERS: READ README.md FIRST! 🚨
+This is a TEMPLATE for home cleaning services companies.
+MUST replace "Placeholder" with client company name throughout ALL files.
+See README.md for complete customization instructions.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Placeholder Cleaning Services</title>
+    <meta name="description" content="Contact us for professional cleaning services. Free estimates, flexible scheduling, and reliable service. Licensed and insured cleaning company.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">PLACEHOLDER</a></h1>
+                <p>cleaning services</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="spacer"></div>
+        <section id="contact-main">
+            <div class="container">
+                <h2>Get Your Free Cleaning Estimate</h2>
+                <p style="text-align: center; margin-bottom: 3rem; font-size: 1.125rem; color: var(--text-medium);">Ready for a cleaner, healthier space? Contact us today for a personalized quote and experience the difference professional cleaning makes.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                    <div style="text-align: center; padding: 1.5rem; background-color: #f0f8ff; border-radius: 8px;">
+                        <h3 style="color: #0066cc; margin-bottom: 1rem;">📞 Call or Text</h3>
+                        <p style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">
+                            <a href="tel:5551234567" style="color: #0066cc; text-decoration: none;">(555) 123-4567</a>
+                        </p>
+                        <p style="font-size: 0.9rem; color: #666;">Available 7 days a week<br>Same-day service available</p>
+                    </div>
+                    
+                    <div style="text-align: center; padding: 1.5rem; background-color: #f0f8ff; border-radius: 8px;">
+                        <h3 style="color: #0066cc; margin-bottom: 1rem;">📧 Email Us</h3>
+                        <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.5rem;">
+                            <a href="mailto:info@placeholderclean.com" style="color: #0066cc; text-decoration: none;">info@placeholderclean.com</a>
+                        </p>
+                        <p style="font-size: 0.9rem; color: #666;">We respond within 24 hours<br>Include your cleaning needs</p>
+                    </div>
+                </div>
+
+                <div class="contact-details">
+                    <h3>Service Areas</h3>
+                    <p><strong>We proudly serve:</strong> [Your Primary City] and surrounding areas including [Nearby Cities]. Not sure if we service your area? Give us a call!</p>
+                    <p style="margin-top: 1rem;"><strong>Service Hours:</strong> Monday - Friday: 8:00 AM - 6:00 PM | Saturday: 9:00 AM - 4:00 PM | Sunday: By appointment</p>
+                    
+                    <div style="margin-top: 2rem; padding: 1.5rem; background-color: #e8f5e8; border-radius: 8px;">
+                        <h4 style="color: #2d5a2d; margin-bottom: 1rem;">Why Choose Our Cleaning Services?</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                            <div>✅ Licensed & Insured</div>
+                            <div>✅ Background-Checked Staff</div>
+                            <div>✅ Satisfaction Guaranteed</div>
+                            <div>✅ Eco-Friendly Options</div>
+                            <div>✅ Flexible Scheduling</div>
+                            <div>✅ Free Estimates</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Request Your Free Estimate</h3>
+                    <p style="margin-bottom: 1.5rem; color: #666;">Tell us about your cleaning needs and we'll provide a customized quote within 24 hours.</p>
+                    
+                    <form id="contact-form">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                            <div>
+                                <label for="name">Full Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div>
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                            <div>
+                                <label for="email">Email Address:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div>
+                                <label for="property-type">Property Type:</label>
+                                <select id="property-type" name="property-type" required>
+                                    <option value="">Select Property Type</option>
+                                    <option value="house">House</option>
+                                    <option value="apartment">Apartment/Condo</option>
+                                    <option value="office">Office</option>
+                                    <option value="commercial">Commercial Space</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="service-type">Service Needed:</label>
+                            <select id="service-type" name="service-type" required>
+                                <option value="">Select Service Type</option>
+                                <option value="regular">Regular Cleaning (Weekly/Bi-weekly/Monthly)</option>
+                                <option value="deep">Deep Cleaning (One-time)</option>
+                                <option value="move">Move-In/Move-Out Cleaning</option>
+                                <option value="construction">Post-Construction Cleanup</option>
+                                <option value="office">Office/Commercial Cleaning</option>
+                                <option value="other">Other (Please specify in message)</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message">Additional Details:</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Please tell us about your space size, specific needs, preferred schedule, or any special requirements..."></textarea>
+                        </div>
+                        
+                        <button type="submit" style="background-color: #0066cc; color: white; padding: 12px 30px; border: none; border-radius: 5px; font-size: 1.1rem; cursor: pointer; width: 100%;">Get My Free Estimate</button>
+                    </form>
+                    <p id="form-status"></p>
+                    
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #666; text-align: center;">
+                        <strong>Emergency cleaning?</strong> Call us directly at <a href="tel:5551234567" style="color: #0066cc;">(555) 123-4567</a> for immediate assistance.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Placeholder Cleaning Services. All rights reserved.</p>
+            <p>Phone: <a href="tel:5551234567">(555) 123-4567</a> | Email: <a href="mailto:info@placeholderclean.com">info@placeholderclean.com</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
