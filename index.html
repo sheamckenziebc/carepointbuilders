@@ -19,19 +19,23 @@ See README.md for complete customization instructions.
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/carepointlogocropped.PNG" alt="CarePoint Builders Logo">
-                </a>
-            </div>
-            <div class="header-contact">
-                <div class="contact-item">
-                    <span class="contact-label">Call:</span>
-                    <a href="tel:25081815611">(250) 818-5611</a>
+            <div class="logo-section">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/carepointlogocropped.PNG" alt="CarePoint Builders Logo">
+                    </a>
                 </div>
-                <div class="contact-item">
-                    <span class="contact-label">Email:</span>
-                    <a href="mailto:info+quotes@carepointbuilders.ca">info@carepointbuilders.ca</a>
+                <div class="tagline">
+                    Western Canada's Leading Dental Clinic Construction Firm
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-contact">
+                    <span class="contact-item">(250) 818-5611</span>
+                    <span class="contact-item">info@carepointbuilders.ca</span>
+                </div>
+                <div class="header-cta">
+                    <a href="#contact-info-home" class="cta-button">Book a Free Consultation</a>
                 </div>
             </div>
         </div>
@@ -40,7 +44,7 @@ See README.md for complete customization instructions.
     <main>
         <section id="hero">
             <div class="container">
-                        <h2 class="hero-header">Western Canada's Leading Dental Clinic Construction Firm</h2>
+                        <h2 class="hero-header">Western Canada's Leading<br>Dental Clinic Construction Firm</h2>
         <p class="hero-subheader">Specialized, compliant, and patient-focused dental facilities built across Western Canada including BC, Alberta, Saskatchewan, and Manitoba</p>
                 <!-- <img src="images/hero_placeholder.jpg" alt="Clean, sparkling home interior" style="width:100%; max-width:600px; margin: 20px auto; display:block;"> -->
             </div>
@@ -135,31 +139,92 @@ See README.md for complete customization instructions.
 
         <section id="contact-info-home">
             <div class="full-width-contact">
-                <div class="contact-logo">
-                    <img src="images/contactuscp.png" alt="Contact CarePoint Builders for dental clinic construction">
-                </div>
-                <div class="contact-info-content">
-                    <h3>Get Your Free Consultation - Western Canada Specialists</h3>
-                    <div class="contact-details-grid">
-                        <div class="contact-method">
-                            <p><strong>Phone:</strong> <a href="tel:25081815611">(250) 818-5611</a></p>
-                            <p><strong>Email:</strong> <a href="mailto:info+quotes@carepointbuilders.ca">info@carepointbuilders.ca</a></p>
+                <div class="contact-form-wrapper">
+                    <div class="form-content">
+                        <div class="form-left">
+                            <div class="form-header">
+                                <h3>Let's Connect!</h3>
+                                <p class="form-subtitle">From blueprint to grand opening—tell us about your project.</p>
+                            </div>
+                            
+                            <div class="contact-info">
+                                <div class="contact-details">
+                                    <p><strong>Email:</strong> <a href="mailto:info+quotes@carepointbuilders.ca">info@carepointbuilders.ca</a></p>
+                                    <p><strong>Phone:</strong> <a href="tel:25081815611">(250) 818-5611</a></p>
+                                    <p><strong>Location:</strong> Victoria, BC - Serving Western Canada</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="contact-keywords">
-                            <p><strong>Specializing in:</strong></p>
-                            <p>Dental Clinic Construction • Healthcare Facilities • Regulatory Compliance • Turn-Key Solutions</p>
-                            <p style="margin-top: 1rem; font-style: italic;">Serving all of Western Canada from our Victoria, BC headquarters</p>
-                        </div>
+                        
+                        <div class="form-right">
+                            <form
+                                action="https://formspree.io/f/xldljrba"
+                                method="POST"
+                                class="contact-form"
+                                id="consultation-form"
+                            >
+                            <div class="form-group">
+                                <label for="name">Name (required)</label>
+                                <div class="name-fields">
+                                    <input 
+                                        type="text" 
+                                        id="first-name" 
+                                        name="first-name" 
+                                        required 
+                                        placeholder="First Name"
+                                    >
+                                    <input 
+                                        type="text" 
+                                        id="last-name" 
+                                        name="last-name" 
+                                        required 
+                                        placeholder="Last Name"
+                                    >
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email (required)</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required 
+                                    placeholder="your.email@example.com"
+                                >
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message (required)</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    required 
+                                    placeholder="Tell us about your dental clinic project..."
+                                    rows="4"
+                                ></textarea>
+                            </div>
+                            
+                            <div class="form-submit">
+                                <button type="submit" class="submit-btn">
+                                    <span class="btn-text">Send</span>
+                                    <span class="btn-loading" style="display: none;">Sending...</span>
+                                </button>
+                            </div>
+                            
+                            <div id="form-status" class="form-status" style="display: none;"></div>
+                        </form>
                     </div>
                 </div>
+            </div>
+        </section>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 CarePoint Builders. All rights reserved.</p>
-            <p>Phone: <a href="tel:25081815611">(250) 818-5611</a> | Email: <a href="mailto:info+quotes@carepointbuilders.ca">info@carepointbuilders.ca</a></p>
+            <p>&copy; 2025 CarePoint Builders | <a href="tel:25081815611">(250) 818-5611</a> | <a href="mailto:info@carepointbuilders.ca">info@carepointbuilders.ca</a></p>
         </div>
     </footer>
 
