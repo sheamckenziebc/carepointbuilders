@@ -1619,8 +1619,29 @@ footer p {
         margin: 0 var(--space-sm);
     }
     
-    .form-title-image {
-        max-width: 150px;
+    .form-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .form-left {
+        text-align: center;
+    }
+    
+    .form-header {
+        text-align: center;
+    }
+    
+    .form-header h3 {
+        font-size: 1.8rem;
+    }
+    
+    .form-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .contact-info {
+        text-align: center;
     }
     
     .name-fields {
@@ -1633,21 +1654,55 @@ footer p {
     .form-group input[type="tel"],
     .form-group select,
     .form-group textarea {
-        padding: var(--space-sm);
+        padding: var(--space-md);
+        font-size: 16px; /* Prevents zoom on iOS */
+        min-height: 44px; /* Touch-friendly minimum height */
+    }
+    
+    .form-group textarea {
+        min-height: 100px;
     }
     
     .submit-btn {
         width: 100%;
-        padding: var(--space-md);
+        padding: var(--space-lg);
+        min-height: 48px; /* Touch-friendly button height */
+        font-size: 1.1rem;
     }
 }
 
 @media (max-width: 480px) {
     .contact-form-wrapper {
         padding: var(--space-md);
+        margin: 0 var(--space-xs);
+    }
+    
+    .form-header h3 {
+        font-size: 1.6rem;
+    }
+    
+    .form-subtitle {
+        font-size: 0.9rem;
     }
     
     .checkbox-label {
         font-size: 0.9rem;
+    }
+    
+    .form-group label {
+        font-size: 0.9rem;
+    }
+    
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group select,
+    .form-group textarea {
+        padding: var(--space-sm);
+    }
+    
+    .submit-btn {
+        padding: var(--space-md);
+        font-size: 1rem;
     }
 } 
